@@ -1,0 +1,27 @@
+{
+  "name": "tv4-loader",
+  "version": "0.0.1",
+  "description": "Webpack loader that used tv4 for json validation.",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Malte Legenhausen <legenhausen@werk85.de>",
+  "license": "ISC",
+  "dependencies": {
+    "loader-utils": "^0.2.13"
+  },
+  "peerDependencies": {
+    "tv4": "^1.2.7"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "loaders",
+    "preloaders",
+    "preloader",
+    "pre",
+    "tv4",
+    "json",
+    "json-schema",
+    "schema"
+  ]
+}
