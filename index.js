@@ -50,9 +50,9 @@ module.exports = function (content) {
   );
 
   if (result.valid !== true) {
-    result.missing.forEach(function (missing) {
-      this.emitError(JSON.stringify(missing));
-    }.bind(this));
+    if (result.missing && result.missing.length > 0) {
+      this.emitError('JSON schemas missing: ' + result.missing.join(', '))
+    }
     result.errors.forEach(function (error) {
       this.emitError(error.message + ' ' + JSON.stringify({
         code: error.code,
