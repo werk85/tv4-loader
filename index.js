@@ -52,7 +52,7 @@ module.exports = function (content) {
   if (result.valid !== true) {
     result.missing.forEach(function (missing) {
       this.emitError(JSON.stringify(missing));
-    });
+    }.bind(this));
     result.errors.forEach(function (error) {
       this.emitError(error.message + ' ' + JSON.stringify({
         code: error.code,
