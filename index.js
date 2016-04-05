@@ -15,7 +15,7 @@ module.exports = function (content) {
 
   var validator = tv4.freshApi();
   if (query.schemas) {
-    validator.addSchemas(query.schemas);
+    validator.addSchema(query.schemas);
   }
 
   var parsedContent;
